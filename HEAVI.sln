@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HEAVI", "HEAVI\HEAVI.csproj", "{D6F21FAE-FCF9-426B-8495-EA51624B7027}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScaleWithEffects", "ScaleWithEffects\ScaleWithEffects.csproj", "{11038D71-82B6-45BF-A864-FE69F1739C63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlertLED", "AlertLED\AlertLED.csproj", "{383B6C47-198D-4827-8266-372EE7DA80E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6F21FAE-FCF9-426B-8495-EA51624B7027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6F21FAE-FCF9-426B-8495-EA51624B7027}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6F21FAE-FCF9-426B-8495-EA51624B7027}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6F21FAE-FCF9-426B-8495-EA51624B7027}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11038D71-82B6-45BF-A864-FE69F1739C63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11038D71-82B6-45BF-A864-FE69F1739C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11038D71-82B6-45BF-A864-FE69F1739C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11038D71-82B6-45BF-A864-FE69F1739C63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{383B6C47-198D-4827-8266-372EE7DA80E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{383B6C47-198D-4827-8266-372EE7DA80E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{383B6C47-198D-4827-8266-372EE7DA80E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{383B6C47-198D-4827-8266-372EE7DA80E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C1F0E450-F5CA-4E29-9852-B29331C71038}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 1
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://mtmsoft.visualstudio.com/defaultcollection
+		SccProjectUniqueName0 = AlertLED\\AlertLED.csproj
+		SccProjectName0 = AlertLED
+		SccAuxPath0 = https://mtmsoft.visualstudio.com/defaultcollection
+		SccLocalPath0 = AlertLED
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+EndGlobal

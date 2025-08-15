@@ -1,0 +1,471 @@
+﻿<UserControl x:Class="ScaleWithEffects.Scale"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ScaleWithEffects"
+             mc:Ignorable="d" Width="462" Height="76">
+    <UserControl.Resources>
+        <Storyboard x:Key="AnimateComputerLights" RepeatBehavior="Forever">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFBDBDBD"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="Red"/>
+                <EasingColorKeyFrame KeyTime="0:0:2" Value="#FFFC0000"/>
+                <EasingColorKeyFrame KeyTime="0:0:2.2" Value="#FFB6B6B6"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle1">
+                <EasingColorKeyFrame KeyTime="0:0:1.5" Value="#FFBDBDBD"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.6" Value="#FFE2FF00"/>
+                <EasingColorKeyFrame KeyTime="0:0:2.1" Value="#FFDEFA05"/>
+                <EasingColorKeyFrame KeyTime="0:0:2.2" Value="#FFBDBDBD"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle2">
+                <EasingColorKeyFrame KeyTime="0:0:1.5" Value="#FFBDBDBD"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.6" Value="#FFE2FF00"/>
+                <EasingColorKeyFrame KeyTime="0:0:2.1" Value="#FFDEFA05"/>
+                <EasingColorKeyFrame KeyTime="0:0:2.2" Value="#FFBDBDBD"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle3">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFBDBDBD"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.5" Value="sc#1, 0.0343398079, 0, 1"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.9" Value="sc#1, 0.0356013142, 0.000607054, 1"/>
+                <EasingColorKeyFrame KeyTime="0:0:2.7" Value="sc#1, 0.520995557, 0.520995557, 0.520995557"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle4">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFBDBDBD"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.5" Value="sc#1, 0.0343398079, 0, 1"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.9" Value="sc#1, 0.0356013142, 0.000607054, 1"/>
+                <EasingColorKeyFrame KeyTime="0:0:2.3" Value="sc#1, 0.50888133, 0.50888133, 0.50888133"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle5">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFBDBDBD"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.5" Value="sc#1, 0.0343398079, 0, 1"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.9" Value="sc#1, 0.0356013142, 0.000607054, 1"/>
+                <EasingColorKeyFrame KeyTime="0:0:2" Value="sc#1, 0.50888133, 0.50888133, 0.50888133"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle6">
+                <EasingColorKeyFrame KeyTime="0:0:1.2" Value="#FFBDBDBD"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.3" Value="sc#1, 0, 0.7529422, 0.9301109"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.6" Value="sc#1, 0.002428216, 0.7011019, 0.8549926"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.8" Value="sc#1, 0.571124852, 0.571124852, 0.571124852"/>
+                <EasingColorKeyFrame KeyTime="0:0:2.1" Value="sc#1, 0, 0.806952238, 1"/>
+                <EasingColorKeyFrame KeyTime="0:0:2.4" Value="sc#1, 0.001821162, 0.7379104, 0.9046612"/>
+                <EasingColorKeyFrame KeyTime="0:0:2.5" Value="sc#1, 0.5394795, 0.5394795, 0.5394795"/>
+                <EasingColorKeyFrame KeyTime="0:0:2.8" Value="sc#1, 0.50888133, 0.50888133, 0.50888133"/>
+                <EasingColorKeyFrame KeyTime="0:0:2.9" Value="sc#1, 0, 1, 0.8796224"/>
+                <EasingColorKeyFrame KeyTime="0:0:4" Value="sc#1, 0.545724452, 0.545724452, 0.545724452"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle7">
+                <EasingColorKeyFrame KeyTime="0:0:1.2" Value="#FFBDBDBD"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.3" Value="sc#1, 0, 0.7529422, 0.9301109"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.6" Value="sc#1, 0.002428216, 0.7011019, 0.8549926"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.8" Value="sc#1, 0.571124852, 0.571124852, 0.571124852"/>
+                <EasingColorKeyFrame KeyTime="0:0:2.1" Value="sc#1, 0, 0.806952238, 1"/>
+                <EasingColorKeyFrame KeyTime="0:0:2.4" Value="sc#1, 0.001821162, 0.7379104, 0.9046612"/>
+                <EasingColorKeyFrame KeyTime="0:0:2.5" Value="sc#1, 0.5394795, 0.5394795, 0.5394795"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle8">
+                <EasingColorKeyFrame KeyTime="0:0:4" Value="#FFBDBDBD"/>
+                <EasingColorKeyFrame KeyTime="0:0:4.2" Value="#FFDC09E5"/>
+                <EasingColorKeyFrame KeyTime="0:0:4.4" Value="#FFF400FF"/>
+                <EasingColorKeyFrame KeyTime="0:0:4.6" Value="#FFB4B4B4"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle9">
+                <EasingColorKeyFrame KeyTime="0:0:4" Value="#FFBDBDBD"/>
+                <EasingColorKeyFrame KeyTime="0:0:4.2" Value="#FFDC09E5"/>
+                <EasingColorKeyFrame KeyTime="0:0:4.4" Value="#FFF400FF"/>
+                <EasingColorKeyFrame KeyTime="0:0:4.6" Value="#FFB4B4B4"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle10">
+                <EasingColorKeyFrame KeyTime="0:0:2" Value="#FFBDBDBD"/>
+                <EasingColorKeyFrame KeyTime="0:0:2.1" Value="#FF00FF4C"/>
+                <EasingColorKeyFrame KeyTime="0:0:3" Value="#FF06F04C"/>
+                <EasingColorKeyFrame KeyTime="0:0:3.1" Value="#FFBDBDBD"/>
+                <EasingColorKeyFrame KeyTime="0:0:4.2" Value="#FF00FF4C"/>
+                <EasingColorKeyFrame KeyTime="0:0:4.6" Value="#FFC3C3C3"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle11">
+                <EasingColorKeyFrame KeyTime="0:0:2" Value="#FFBDBDBD"/>
+                <EasingColorKeyFrame KeyTime="0:0:2.1" Value="#FF00FF4C"/>
+                <EasingColorKeyFrame KeyTime="0:0:3" Value="#FF06F04C"/>
+                <EasingColorKeyFrame KeyTime="0:0:3.1" Value="#FFBDBDBD"/>
+                <EasingColorKeyFrame KeyTime="0:0:4.2" Value="#FF00FF4C"/>
+                <EasingColorKeyFrame KeyTime="0:0:4.6" Value="#FFC3C3C3"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle12">
+                <EasingColorKeyFrame KeyTime="0:0:0.6" Value="#FFB9B9B9"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#FFD9FF00"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.1" Value="#FFD4F708"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.3" Value="#FFC1C2BD"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle13">
+                <EasingColorKeyFrame KeyTime="0:0:0.6" Value="#FFB9B9B9"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#FFD9FF00"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.1" Value="#FFD4F708"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.3" Value="#FFC1C2BD"/>
+                <EasingColorKeyFrame KeyTime="0:0:3" Value="#FFB9B9B9"/>
+                <EasingColorKeyFrame KeyTime="0:0:3.2" Value="#FFD9FF00"/>
+                <EasingColorKeyFrame KeyTime="0:0:3.5" Value="#FFD4F708"/>
+                <EasingColorKeyFrame KeyTime="0:0:3.7" Value="#FFC1C2BD"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle14">
+                <EasingColorKeyFrame KeyTime="0:0:0.6" Value="#FFB9B9B9"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.8" Value="#FFD9FF00"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.1" Value="#FFD4F708"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.3" Value="#FFC1C2BD"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle15">
+                <EasingColorKeyFrame KeyTime="0:0:0.3" Value="#FFBCBCBC"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#FF8EFFC4"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF91FCC4"/>
+                <EasingColorKeyFrame KeyTime="0:0:2" Value="Silver"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle16">
+                <EasingColorKeyFrame KeyTime="0:0:0.3" Value="#FFBCBCBC"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.4" Value="#FF8EFFC4"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF91FCC4"/>
+                <EasingColorKeyFrame KeyTime="0:0:2" Value="Silver"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle17">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFBDBDBD"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#FF030073"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF090771"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.2" Value="#FFBFBFBF"/>
+                <EasingColorKeyFrame KeyTime="0:0:3" Value="#FFBDBDBD"/>
+                <EasingColorKeyFrame KeyTime="0:0:3.2" Value="#FF030073"/>
+                <EasingColorKeyFrame KeyTime="0:0:4" Value="#FF090771"/>
+                <EasingColorKeyFrame KeyTime="0:0:4.2" Value="#FFBFBFBF"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle18">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFBDBDBD"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#FF030073"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF090771"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.2" Value="#FFBFBFBF"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle19">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFBDBDBD"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#FF030073"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF090771"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.2" Value="#FFBFBFBF"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle20">
+                <EasingColorKeyFrame KeyTime="0" Value="#FFBDBDBD"/>
+                <EasingColorKeyFrame KeyTime="0:0:0.2" Value="#FF030073"/>
+                <EasingColorKeyFrame KeyTime="0:0:1" Value="#FF090771"/>
+                <EasingColorKeyFrame KeyTime="0:0:1.2" Value="#FFBFBFBF"/>
+                <EasingColorKeyFrame KeyTime="0:0:3" Value="#FFBDBDBD"/>
+                <EasingColorKeyFrame KeyTime="0:0:3.2" Value="White"/>
+                <EasingColorKeyFrame KeyTime="0:0:4" Value="#FF090771"/>
+                <EasingColorKeyFrame KeyTime="0:0:4.2" Value="#FFBFBFBF"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle21">
+                <EasingColorKeyFrame KeyTime="0:0:3.6" Value="Silver"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle22">
+                <EasingColorKeyFrame KeyTime="0:0:3.6" Value="Silver"/>
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" Storyboard.TargetName="rectangle23">
+                <EasingColorKeyFrame KeyTime="0:0:3.6" Value="Silver"/>
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="RotateGuageArrow" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="rectArrow">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="-359"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="ellipse">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.935" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:1.1" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="AnimateBellows2" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="imageBellows">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.34"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0.978"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.304"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="AnimateWave" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="imageWave">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="77"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="imageWave">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </UserControl.Resources>
+    <UserControl.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource RotateGuageArrow}"/>
+            <BeginStoryboard x:Name="AnimateComputerLights_BeginStoryboard" Storyboard="{StaticResource AnimateComputerLights}"/>
+            <BeginStoryboard Storyboard="{StaticResource AnimateBellows2}"/>
+            <BeginStoryboard Storyboard="{StaticResource AnimateWave}"/>
+        </EventTrigger>
+    </UserControl.Triggers>
+
+    <Grid HorizontalAlignment="Left" Width="462">
+        <Image x:Name="imgScale" Margin="0,0,0,0.5" Source="GFX/Scale.png" Stretch="Fill" Height="71.639" VerticalAlignment="Bottom" HorizontalAlignment="Left"/>
+        <Canvas x:Name="canvasBellows" Margin="0,0,150.664,5" Height="23" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <Path x:Name="Path" Width="74.532" Height="23" Stretch="Fill" StrokeLineJoin="Round" Stroke="#FF797979" Data="F1 M 147,64L 493,64C 494.657,64 496,65.3431 496,67L 496,221C 496,222.657 494.657,224 493,224L 147,224C 145.343,224 144,222.657 144,221L 144,67C 144,65.3431 145.343,64 147,64 Z ">
+                <Path.Fill>
+                    <LinearGradientBrush StartPoint="0.5,0.960763" EndPoint="0.5,0.0392357">
+                        <GradientStop Color="#FF575757" Offset="0"/>
+                        <GradientStop Color="#FFB4B2B2" Offset="0.0760668"/>
+                        <GradientStop Color="#FFC3C3C3" Offset="0.929499"/>
+                        <GradientStop Color="#FF8D8C8C" Offset="1"/>
+                    </LinearGradientBrush>
+                </Path.Fill>
+            </Path>
+            <Image x:Name="imageBellows" Height="19.226" Width="73.86" Source="GFX/Bellows.png" Canvas.Top="2.2" Stretch="Fill" RenderTransformOrigin="0,0.525">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Path x:Name="PathGlassGlare1" Width="21.131" Height="10.826" Stretch="Fill" Data="F1 M 185.509,80C 219.52,80 253.532,80 270.538,84.4C 287.544,88.8 287.544,97.6 277.34,103.467C 267.137,109.333 246.73,112.267 236.526,116.667C 226.323,121.067 226.323,126.933 224.055,131.333C 221.788,135.733 217.253,138.667 205.916,138.667C 194.578,138.667 176.439,135.733 167.369,125.467C 158.299,115.2 158.299,97.6 162.834,88.8C 167.369,80.0001 176.439,80 185.509,80" Canvas.Left="3.2" Canvas.Top="2.2">
+                <Path.Fill>
+                    <LinearGradientBrush StartPoint="0.479436,0.963" EndPoint="0.479436,0.0870022">
+                        <GradientStop Color="#40B3B3B3" Offset="0"/>
+                        <GradientStop Color="#E1FFFFFF" Offset="0.747681"/>
+                        <GradientStop Color="#FFFFFFFF" Offset="0.836735"/>
+                        <GradientStop Color="#D3FFFFFF" Offset="0.907236"/>
+                        <GradientStop Color="#33B3B3B3" Offset="1"/>
+                    </LinearGradientBrush>
+                </Path.Fill>
+            </Path>
+            <Path x:Name="PathGlassGlare2" Width="9.203" Height="5.394" Canvas.Left="61.457" Canvas.Top="12.25" Stretch="Fill" Data="F1 M 459.763,194.713C 433.256,193.377 406.748,192.04 393.619,188.909C 380.489,185.779 380.738,180.855 388.855,177.974C 396.973,175.093 412.96,174.253 421.037,172.193C 429.113,170.132 429.279,166.849 431.17,164.476C 433.061,162.104 436.678,160.641 445.514,161.086C 454.35,161.532 468.404,163.886 475.183,169.987C 481.962,176.088 481.465,185.935 477.683,190.681C 473.9,195.426 466.832,195.07 459.763,194.713">
+                <Path.Fill>
+                    <LinearGradientBrush StartPoint="0.531318,0.022408" EndPoint="1.37979,0.022408">
+                        <LinearGradientBrush.RelativeTransform>
+                            <TransformGroup>
+                                <SkewTransform CenterX="0.531318" CenterY="0.022408" AngleX="-7.22615" AngleY="0"/>
+                                <RotateTransform CenterX="0.531318" CenterY="0.022408" Angle="91.0072"/>
+                            </TransformGroup>
+                        </LinearGradientBrush.RelativeTransform>
+                        <GradientStop Color="#40B3B3B3" Offset="0"/>
+                        <GradientStop Color="#E1FFFFFF" Offset="0.747681"/>
+                        <GradientStop Color="#FFFFFFFF" Offset="0.836735"/>
+                        <GradientStop Color="#D3FFFFFF" Offset="0.907236"/>
+                        <GradientStop Color="#33B3B3B3" Offset="1"/>
+                    </LinearGradientBrush>
+                </Path.Fill>
+            </Path>
+        </Canvas>
+        <Grid x:Name="grdWeightGuage" HorizontalAlignment="Right" Height="23.6" VerticalAlignment="Bottom" Width="26.8" Margin="0,0,40,5">
+            <Rectangle x:Name="rectGuageBackGround" Fill="#FFBDBDBD" RadiusX="3" RadiusY="2" Stroke="#FF979797"/>
+            <Ellipse Fill="White" Margin="3.175,2.788,3.126,2.563" Stroke="Black"/>
+            <Ellipse Fill="White" Margin="12.467,11.333,13.033,11.167" Stroke="Black"/>
+            <Rectangle x:Name="rectArrow" Fill="White" Margin="13.092,11.501,4.541,11.349" Stroke="Black" RenderTransformOrigin="-0.007,0.493">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+            </Rectangle>
+            <Ellipse x:Name="ellipse" HorizontalAlignment="Right" Height="3.292" Margin="0,4.849,7.75,0" VerticalAlignment="Top" Width="3.417">
+                <Ellipse.Fill>
+                    <RadialGradientBrush>
+                        <GradientStop Color="#FFF31010" Offset="0.649"/>
+                        <GradientStop Color="White" Offset="0.992"/>
+                    </RadialGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+        </Grid>
+        <Grid x:Name="grdSignalLights" HorizontalAlignment="Left" Height="21.6" VerticalAlignment="Bottom" Width="47.2" Margin="12,-4,0,4">
+            <Rectangle x:Name="rectMain" Fill="#FFC2C2C2" Margin="-2.4,0,0,0" Stroke="#FF999999" Height="19.467" VerticalAlignment="Top" RadiusX="3" RadiusY="3" HorizontalAlignment="Left" Width="48.2"/>
+            <Rectangle x:Name="rectangle" HorizontalAlignment="Left" Margin="-0.4,2.853,0,0" Width="3.6" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top"/>
+            <Rectangle x:Name="rectangle6" HorizontalAlignment="Left" Margin="3.935,2.853,0,0" Width="3.6" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top"/>
+            <Rectangle HorizontalAlignment="Left" Margin="-0.4,7.52,0,0" Width="3.6" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top"/>
+            <Rectangle x:Name="rectangle1" HorizontalAlignment="Left" Margin="-0.4,12.105,0,0" Width="3.6" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top"/>
+            <Rectangle x:Name="rectangle8" HorizontalAlignment="Left" Margin="3.935,7.52,0,0" Width="3.6" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top"/>
+            <Rectangle x:Name="rectangle9" HorizontalAlignment="Left" Margin="3.935,12.105,0,0" Width="3.6" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top"/>
+            <Rectangle x:Name="rectangle10" HorizontalAlignment="Left" Margin="8.2,2.853,0,0" Width="3.6" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top"/>
+            <Rectangle HorizontalAlignment="Left" Margin="12.535,2.853,0,0" Width="3.6" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top"/>
+            <Rectangle x:Name="rectangle3" HorizontalAlignment="Left" Margin="8.2,7.52,0,0" Width="3.6" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top"/>
+            <Rectangle x:Name="rectangle11" HorizontalAlignment="Left" Margin="8.2,12.105,0,0" Width="3.6" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top"/>
+            <Rectangle x:Name="rectangle4" HorizontalAlignment="Left" Margin="12.535,7.52,0,0" Width="3.6" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top"/>
+            <Rectangle x:Name="rectangle12" HorizontalAlignment="Left" Margin="12.535,12.105,0,0" Width="3.6" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top"/>
+            <Rectangle x:Name="rectangle13" HorizontalAlignment="Left" Margin="16.8,2.853,0,0" Width="3.6" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top"/>
+            <Rectangle x:Name="rectangle15" HorizontalAlignment="Left" Margin="21.135,2.853,0,0" Width="3.6" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top"/>
+            <Rectangle x:Name="rectangle5" HorizontalAlignment="Left" Margin="16.8,7.52,0,0" Width="3.6" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top"/>
+            <Rectangle x:Name="rectangle16" HorizontalAlignment="Left" Margin="16.8,12.105,0,0" Width="3.6" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top"/>
+            <Rectangle x:Name="rectangle17" HorizontalAlignment="Left" Margin="21.135,7.52,0,0" Width="3.6" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top"/>
+            <Rectangle x:Name="rectangle18" HorizontalAlignment="Left" Margin="21.135,12.105,0,0" Width="3.6" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top"/>
+            <Rectangle x:Name="rectangle19" HorizontalAlignment="Left" Margin="25.4,2.853,0,0" Width="3.6" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top"/>
+            <Rectangle x:Name="rectangle2" HorizontalAlignment="Left" Margin="29.735,2.853,0,0" Width="3.6" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top"/>
+            <Rectangle HorizontalAlignment="Left" Margin="25.4,7.52,0,0" Width="3.6" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top"/>
+            <Rectangle x:Name="rectangle14" HorizontalAlignment="Left" Margin="25.4,12.105,0,0" Width="3.6" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top"/>
+            <Rectangle HorizontalAlignment="Left" Margin="29.735,7.52,0,0" Width="3.6" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top"/>
+            <Rectangle HorizontalAlignment="Left" Margin="29.735,12.105,0,0" Width="3.6" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top"/>
+            <Rectangle HorizontalAlignment="Left" Margin="34,2.853,0,0" Width="3.6" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top"/>
+            <Rectangle x:Name="rectangle21" Margin="38.335,2.853,0,0" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top" HorizontalAlignment="Left" Width="3.6"/>
+            <Rectangle x:Name="rectangle22" HorizontalAlignment="Left" Margin="34,7.52,0,0" Width="3.6" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top"/>
+            <Rectangle x:Name="rectangle20" HorizontalAlignment="Left" Margin="34,12.105,0,0" Width="3.6" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top"/>
+            <Rectangle x:Name="rectangle7" Margin="38.335,7.52,0,0" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top" HorizontalAlignment="Left" Width="3.6"/>
+            <Rectangle x:Name="rectangle23" Margin="38.335,12.105,0,0" Fill="#FFBDBDBD" Height="3.862" VerticalAlignment="Top" HorizontalAlignment="Left" Width="3.6"/>
+            <Rectangle x:Name="rectSoundPressureLeft" Fill="#FFFFE800" HorizontalAlignment="Left" Height="19.584" Margin="141.461,-0.117,-113.511,0" Stroke="#FF575757" VerticalAlignment="Top" Width="19.25" RadiusX="5" RadiusY="5"/>
+        </Grid>
+        <Grid x:Name="grdOcciloscope" Height="23" Margin="0,0,315,4.75" VerticalAlignment="Bottom" ClipToBounds="True" HorizontalAlignment="Right" Width="80.666">
+            <Rectangle x:Name="rectOcciloscope" Fill="#FF163619" Stroke="Black" RadiusX="3" RadiusY="3">
+
+            </Rectangle>
+            <Image x:Name="imgGrid" Source="GFX/GridForOcciliscope.png" Stretch="Fill" Margin="1.667,1.5,0,1.333"/>
+            <Image x:Name="imageWave" Margin="-76.25,0.167,0,1.333" Source="GFX/WaveForOcciliscope.png" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+        </Grid>
+        <Grid x:Name="grdHeavi" HorizontalAlignment="Left" Height="20.6" VerticalAlignment="Top" Width="96.667" Margin="178.75,49.75,0,0">
+            <Rectangle x:Name="rectHEAVI" Fill="#FF9B9B9B" HorizontalAlignment="Left" Height="20.6" Stroke="Black" VerticalAlignment="Top" Width="96.667" RadiusX="3" RadiusY="3"/>
+            <TextBlock x:Name="txtHeavi" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="76.417" Margin="10,1.75,0,0" Foreground="#FF424242"><Run Text="H.E.A.V.I. 2022"/></TextBlock>
+        </Grid>
+        <Ellipse HorizontalAlignment="Left" Height="4.166" Margin="1.416,44.667,0,0" VerticalAlignment="Top" Width="4.001" StrokeThickness="0.5">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF636363" Offset="1"/>
+                    <GradientStop Color="#FFA2A2A2"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse HorizontalAlignment="Left" Height="4.166" Margin="1.416,70.5,0,0" VerticalAlignment="Top" Width="4.001" StrokeThickness="0.5">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF636363" Offset="1"/>
+                    <GradientStop Color="#FFA2A2A2"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse HorizontalAlignment="Left" Height="4.166" Margin="161.749,44.667,0,0" VerticalAlignment="Top" Width="4.001" StrokeThickness="0.5">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF636363" Offset="1"/>
+                    <GradientStop Color="#FFA2A2A2"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse HorizontalAlignment="Left" Height="4.166" Margin="161.749,70.5,0,0" VerticalAlignment="Top" Width="4.001" StrokeThickness="0.5">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF636363" Offset="1"/>
+                    <GradientStop Color="#FFA2A2A2"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse HorizontalAlignment="Left" Height="4.166" Margin="290.416,44.667,0,0" VerticalAlignment="Top" Width="4.001" StrokeThickness="0.5">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF636363" Offset="1"/>
+                    <GradientStop Color="#FFA2A2A2"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse HorizontalAlignment="Left" Height="4.166" Margin="290.416,70.5,0,0" VerticalAlignment="Top" Width="4.001" StrokeThickness="0.5">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF636363" Offset="1"/>
+                    <GradientStop Color="#FFA2A2A2"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse HorizontalAlignment="Left" Height="4.166" Margin="427,44.667,0,0" VerticalAlignment="Top" Width="4.001" StrokeThickness="0.5">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF636363" Offset="1"/>
+                    <GradientStop Color="#FFA2A2A2"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse HorizontalAlignment="Left" Height="4.166" Margin="427,70.5,0,0" VerticalAlignment="Top" Width="4.001" StrokeThickness="0.5">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF636363" Offset="1"/>
+                    <GradientStop Color="#FFA2A2A2"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse HorizontalAlignment="Left" Height="4.166" Margin="180.999,52.25,0,0" VerticalAlignment="Top" Width="4.001" StrokeThickness="0.5">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF636363" Offset="1"/>
+                    <GradientStop Color="#FFA2A2A2"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse HorizontalAlignment="Left" Height="4.166" Margin="180.999,64,0,0" VerticalAlignment="Top" Width="4.001" StrokeThickness="0.5">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF636363" Offset="1"/>
+                    <GradientStop Color="#FFA2A2A2"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse HorizontalAlignment="Left" Height="4.166" Margin="268.749,52.25,0,0" VerticalAlignment="Top" Width="4.001" StrokeThickness="0.5">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF636363" Offset="1"/>
+                    <GradientStop Color="#FFA2A2A2"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse HorizontalAlignment="Left" Height="4.166" Margin="268.749,64,0,0" VerticalAlignment="Top" Width="4.001" StrokeThickness="0.5">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF636363" Offset="1"/>
+                    <GradientStop Color="#FFA2A2A2"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse HorizontalAlignment="Left" Height="4.166" Margin="436.001,42.083,0,0" VerticalAlignment="Top" Width="2.168" StrokeThickness="0.5">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF636363" Offset="1"/>
+                    <GradientStop Color="#FFA2A2A2"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse HorizontalAlignment="Left" Height="4.166" Margin="435.085,66.35,0,0" VerticalAlignment="Top" Width="2.168" StrokeThickness="0.5">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF636363" Offset="1"/>
+                    <GradientStop Color="#FFA2A2A2"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse HorizontalAlignment="Left" Height="4.166" Margin="459.084,8.75,0,0" VerticalAlignment="Top" Width="2.168" StrokeThickness="0.5">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF636363" Offset="1"/>
+                    <GradientStop Color="#FFA2A2A2"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse HorizontalAlignment="Left" Height="4.166" Margin="458.168,33.017,0,0" VerticalAlignment="Top" Width="2.168" StrokeThickness="0.5" RenderTransformOrigin="0.268,0.636">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF636363" Offset="1"/>
+                    <GradientStop Color="#FFA2A2A2"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Rectangle x:Name="rectSoundPressureRight" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="19.584" Margin="283.417,50.4,0,0" Stroke="#FF575757" VerticalAlignment="Top" Width="19.25" RadiusX="5" RadiusY="5"/>
+        <TextBlock x:Name="txtSoundPresureRight" Text="99" Margin="287,53,163,9" FontFamily="Seven Segment" FontWeight="Bold" FontSize="10"/>
+
+    </Grid>
+</UserControl>

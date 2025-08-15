@@ -1,0 +1,31 @@
+﻿04072018:
+	Sounds
+		Weight Low sound 1-3
+		Weight High sound 1-3
+		InZone sound 1-3
+		Loose sounds 1-3
+		Win sounds 1-3
+		Win game
+		Win game with chips 1-3
+		OfferWager sound 1-?
+		06072018: Some sounds made: Husk nye win sound i SoundEffects
+
+	Code
+		Win soundeffects
+			"RoundWon"
+		Loose soundeffects
+			"RoundLost"
+		IdleScreen: Chips bags to appear in tree
+		GetReadyForTheWager: Design a quick and nasty count down.
+		OfferWager dynamisk text
+		WagerLost design screen
+
+	06072018:
+		Sounds for:
+			WagerLost
+			WagerWon
+			Inzone
+			Weight low/high skal have mere volume
+
+		
+

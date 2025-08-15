@@ -1,0 +1,596 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HEAVI"
+        xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" xmlns:ScaleWithEffects="clr-namespace:ScaleWithEffects;assembly=ScaleWithEffects" x:Class="HEAVI.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="1080" Width="1920" ResizeMode="NoResize" Closing="Window_Closing" Topmost="False" WindowState="Maximized" Background="{x:Null}" WindowStyle="None" MouseDoubleClick="Window_MouseDoubleClick" KeyDown="Window_KeyDown" >
+    <Window.Resources>
+        <Storyboard x:Key="MoveUpAndDown">
+            <DoubleAnimation
+            Storyboard.TargetProperty="(Canvas.Top)"
+            Storyboard.TargetName="MyWeight"
+            From="0" To="15"
+            Duration="0:0:2"
+            AutoReverse="True"
+            RepeatBehavior="Forever" />
+        </Storyboard>
+        <Storyboard x:Key="Animate">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="canvasGlare">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="canvasGlare">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="canvasGlare">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="canvasGlare">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="240"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="Weight" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="Weight">
+                <EasingDoubleKeyFrame KeyTime="0" Value="7">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="-7"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="7">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="animateMagicNumber">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="textBlockThresholdHeld">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <BounceEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="textBlockThresholdHeld">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="AnimateGuyGlasses" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="grdGuy1">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-2.185">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="2.702">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="-1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="-2.185">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="2.702">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:11" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="imageGuy1EyesVClosed">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:1.8" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:2.1" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:2.8" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:3" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="AnimateBrunette" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="grdBrunette">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.4" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="1.5">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseIn"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:7" Value="-1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="imageTits">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.3" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.6" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <BounceEase EasingMode="EaseIn"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="imageTits">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.3" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.6" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <BounceEase EasingMode="EaseIn"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="imageTits">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-1.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.3" Value="-1.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.6" Value="-1.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-1.154"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="imageTits">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.3" Value="-5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.6" Value="-5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-5.521"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="imageBrunetteEyesClosed">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:4" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:4.3" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:7" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:7.1" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="AnimateStylishGirl" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="imageStylishGirlUpper">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-20.09">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseIn"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="6.662">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-25">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="-1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <BackEase EasingMode="EaseIn" Amplitude="0.5"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.6" Value="2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.5" Value="-2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="3"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.5" Value="-23"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="AnimateSandGuy" RepeatBehavior="Forever">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="imageMouth">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="imageMouth">
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="imageSandGuyBigSmile">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="0.1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <BackEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="imageSandGuyBigSmile">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="0.1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <BackEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="imageSandGuyBigSmile">
+                <DiscreteObjectKeyFrame KeyTime="0:0:1.5">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="0:0:2.4" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:7" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="canvasGlare">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.4" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="canvasGlare">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.4" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="canvasGlare">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.4" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="canvasGlare">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.9" Value="120"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.4" Value="240"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="imageSandGuyArm">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-57.776">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseIn"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.2" Value="-3">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <BounceEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="3"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6.6" Value="-59"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7" Value="-61"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:8" Value="-53"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:9" Value="-60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10.2" Value="-48"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.5" Value="-39"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:13" Value="-57"/>
+            </DoubleAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)" Storyboard.TargetName="grdSandGuy">
+                <EasingPointKeyFrame KeyTime="0" Value="0.574,1.101"/>
+            </PointAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="grdSandGuy">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="-1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7.8" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:8.6" Value="-2">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:9.6" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:10.7" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:11.9" Value="-1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:13" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource Weight}"/>
+            <BeginStoryboard Storyboard="{StaticResource animateMagicNumber}"/>
+            <BeginStoryboard Storyboard="{StaticResource AnimateGuyGlasses}"/>
+            <BeginStoryboard Storyboard="{StaticResource AnimateBrunette}"/>
+            <BeginStoryboard Storyboard="{StaticResource AnimateStylishGirl}"/>
+            <BeginStoryboard Storyboard="{StaticResource AnimateSandGuy}"/>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid x:Name="grdMain">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="107*"/>
+            <RowDefinition Height="19*"/>
+            <RowDefinition Height="904*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="42*"/>
+            <ColumnDefinition Width="559*"/>
+            <ColumnDefinition Width="317*"/>
+            <ColumnDefinition Width="299*"/>
+            <ColumnDefinition Width="655*"/>
+            <ColumnDefinition Width="48*"/>
+        </Grid.ColumnDefinitions>
+
+
+
+
+        <Image x:Name="imageSteel" HorizontalAlignment="Left" Width="1920" Source="GFX/gamescreen.jpg" Height="1080" Grid.RowSpan="4" Grid.ColumnSpan="6" MouseLeftButtonDown="imageSteel_MouseLeftButtonDown"/>
+        <Grid x:Name="grdMainContent" HorizontalAlignment="Left" Margin="0,0,0,7" Grid.ColumnSpan="2">
+            <Grid x:Name="grdWeightToHit" Height="904" Margin="41.978,0,-500.687,-930" VerticalAlignment="Bottom" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="407*"/>
+                    <RowDefinition Height="22*"/>
+                    <RowDefinition Height="475*"/>
+                </Grid.RowDefinitions>
+                <Rectangle x:Name="rectWeightToHitBorder"  Stroke="#FF444444" RadiusX="10" RadiusY="10" StrokeThickness="5" Grid.RowSpan="3" Margin="0,0,500,0"/>
+                <Rectangle x:Name="rectWeightToHit" RadiusX="10" RadiusY="10" StrokeThickness="5" Fill="Black" Opacity="0.2" Grid.RowSpan="3" Margin="0,0,500,0"/>
+                <local:ShadowTextBlock HorizontalAlignment="Left" Margin="-10,10,0,0" VerticalAlignment="Top" Height="61" Width="538.709" Foreground="White" FontFamily="Tw Cen MT Condensed Extra Bold" Text="Ram denne vægt:" FontSize="50.667" />
+                <Canvas x:Name="Weight" Margin="50,170,49,268" RenderTransformOrigin="0.52,0.09" Grid.RowSpan="3">
+                    <Canvas.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="7"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Canvas.RenderTransform>
+                    <Image Source="/GFX/Weight.png" Height="571" Width="420" Canvas.Left="37" Canvas.Top="-23" />
+                    <TextBlock x:Name="textBlockTheWeightToHit" Grid.Row="1" TextWrapping="Wrap" Text="500 kg" Foreground="White" FontFamily="Tw Cen MT Condensed Extra Bold" FontSize="96" Canvas.Left="101.547" Canvas.Top="289"/>
+                </Canvas>
+
+
+            </Grid>
+            <Grid x:Name="grdYourCombindedWeight" HorizontalAlignment="Right" Height="904" Margin="0,0,-1117.366,-930" VerticalAlignment="Bottom" Width="616.679">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="203*"/>
+                    <RowDefinition Height="11*"/>
+                    <RowDefinition Height="238*"/>
+                </Grid.RowDefinitions>
+
+                <Rectangle x:Name="rectYourCombinedWeightBorder" RadiusX="10" RadiusY="10" StrokeThickness="5" RenderTransformOrigin="0.5,0.5" Stroke="#FF444444" Grid.RowSpan="3" Margin="-472,0,472,0"/>
+                <Rectangle x:Name="rectYourCombinedWeight" RadiusX="10" RadiusY="10" StrokeThickness="5" RenderTransformOrigin="0.5,0.5" Fill="Black" Opacity="0.2" Grid.RowSpan="3" Margin="-472,0,472,0"/>
+                <local:ShadowTextBlock x:Name="textBlockYourCombinedWeight" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="50.667" FontFamily="Tw Cen MT Condensed Extra Bold" Text="Jeres  vægt:" Height="70" Foreground="White" Width="465" Margin="-396,10,0,0"/>
+                <local:ShadowTextBlock x:Name="textCurrentWeight" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="50.667" FontFamily="Tw Cen MT Condensed Extra Bold" Text="x kg" Height="70" Foreground="White" Width="465" Margin="-396,100,0,0"/>
+
+            </Grid>
+            <Grid x:Name="grdGuy1" HorizontalAlignment="Right" Height="320" Margin="0,0,-330,-628.214" VerticalAlignment="Bottom" Width="190" RenderTransformOrigin="0.67,0.951">
+                <Grid.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Grid.RenderTransform>
+                <Image x:Name="imageGuy1" HorizontalAlignment="Right" Margin="0" Width="190" Source="GFX/GuyGlasses.png" Height="333.5" VerticalAlignment="Bottom" RenderTransformOrigin="0.813,1.004">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <Image x:Name="imageGuy1EyesVClosed" Height="28" VerticalAlignment="Top" Source="GFX/GuyGlassesEyesClosed.png" Stretch="Fill" HorizontalAlignment="Left" Width="63.666" Margin="87,39,0,0"/>
+            </Grid>
+            <Grid x:Name="grdStylishgiGirl" HorizontalAlignment="Right" Height="288" Margin="0,0,-400,-571" VerticalAlignment="Bottom" Width="141" RenderTransformOrigin="0.583,0.937">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="54*"/>
+                    <RowDefinition Height="13*"/>
+                    <RowDefinition Height="221*"/>
+                </Grid.RowDefinitions>
+                <Grid.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Grid.RenderTransform>
+                <Image x:Name="imageStylishGirlUpper" HorizontalAlignment="Right" Margin="0,0,-5,94" Width="112" Source="GFX/StylishGirlUpper.png" Height="172" VerticalAlignment="Bottom" RenderTransformOrigin="0.348,0.773" Grid.RowSpan="3">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-8.65"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <Image x:Name="imageStylishGirlLower" Margin="3,0,-15,-67" Source="GFX/StylishGirlLower.png" Height="201" VerticalAlignment="Bottom" Grid.Row="2"/>
+            </Grid>
+            <Grid x:Name="grdBrunette" HorizontalAlignment="Right" Height="288" Margin="0,0,-270,-649" VerticalAlignment="Bottom" Width="141" RenderTransformOrigin="0.583,0.937">
+                <Grid.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Grid.RenderTransform>
+                <Image x:Name="imageBrunette" HorizontalAlignment="Left" Margin="0" Width="153" Source="GFX/Brunette.png" Height="297.5" VerticalAlignment="Bottom" RenderTransformOrigin="0.813,1.004">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <Image x:Name="imageBrunetteEyesClosed" Height="26" Margin="46,40,53,0" VerticalAlignment="Top" Source="GFX/BrunetteEyesClosed.png"/>
+                <Image x:Name="imageTits" Margin="29,96,35,0" Source="GFX/Tits.png" Height="38" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" MouseDown="imageTits_MouseDown">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+            </Grid>
+            <Grid x:Name="grdSandGuy" HorizontalAlignment="Right" Height="288" Margin="0,0,-575,-594" VerticalAlignment="Bottom" Width="141" RenderTransformOrigin="0.583,0.937">
+                <Grid.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Grid.RenderTransform>
+                <Image x:Name="imageSandGuyMain" HorizontalAlignment="Right" Margin="0,-44.066,-15.333,-34.055" Width="135.133" Source="GFX/SandGuy.png" Height="366.121" VerticalAlignment="Bottom" RenderTransformOrigin="0.348,0.773"/>
+                <Image x:Name="imageSandGuyArm" Margin="10,29.466,44.175,0" Source="GFX/SandGuyHand.png" Height="96.433" VerticalAlignment="Top" RenderTransformOrigin="0.405,0.95">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-57.776"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <Image x:Name="imageMouth" Height="11.466" Margin="0,65.068,44.8,0" VerticalAlignment="Top" Source="GFX/SandGuySmileSmall.png" HorizontalAlignment="Right" Width="21.6" RenderTransformOrigin="0.5,0.5">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <Image x:Name="imageSandGuyBigSmile" Height="23.466" Margin="68.734,56.935,40.533,0" VerticalAlignment="Top" Source="GFX/SandGuySmile.png" RenderTransformOrigin="0.5,0.5">
+                    <Image.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Image.RenderTransform>
+                </Image>
+                <Canvas x:Name="canvasGlare" RenderTransformOrigin="0.5,0.5" Width="100" Height="100" Margin="26.5,14.8,14.5,0" VerticalAlignment="Top" d:LayoutOverrides="Height" >
+                    <Canvas.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Canvas.RenderTransform>
+                </Canvas>
+            </Grid>
+            <Image x:Name="imageGuy2" HorizontalAlignment="Right" Margin="0,0,-500,-620.214" Width="132" Source="GFX/NewGuy1.png" Height="333.5" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+            <Canvas x:Name="ArrowWeightDifference" HorizontalAlignment="Right" Margin="0,0,-1420,-7" Width="654.659">
+                <Image x:Name="imageArrowWeight" Source="/GFX/arrowred.png" Width="500" Height="300" Canvas.Left="-106" Canvas.Top="329"></Image>
+                <!--Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="pathArrowWeightDifference" StrokeThickness="4" Stroke="#FFEA8A8A" StrokeLineJoin="Miter" StrokeStartLineCap="Flat" StrokeEndLineCap="Flat"  Height="475.267" Stretch="Fill" Width="359.66" Fill="Red" Canvas.Top="241.252" Canvas.Left="-66.673">
+                    <Path.Data>
+                        <PathGeometry Figures="m 103.1875 183.22917 18.52083 15.875 -18.52083 15.875 v -10.58333 h -15.875 v -10.58333 h 15.875 z" FillRule="NonZero"/>
+                    </Path.Data>
+                </Path-->
+                <TextBlock x:Name="textBlockWeightDiffence" TextAlignment="Right" Text="180" Foreground="White" FontFamily="Tw Cen MT Condensed Extra Bold" FontSize="80" Canvas.Top="431" Canvas.Left="-67" Width="156" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                <Image x:Name="imageRedCross" Height="388" Canvas.Left="252" Canvas.Top="285" Width="312" Source="GFX\RedX.png"/>
+                <TextBlock x:Name="textBlockWeightDiffenceKgs" TextAlignment="Justify" Text="kg" Foreground="White" FontFamily="Tw Cen MT Condensed Extra Bold" FontSize="80" Canvas.Top="431" Canvas.Left="113" HorizontalAlignment="Left" VerticalAlignment="Center" />
+            </Canvas>
+            <Label  x:Name="textBlockCombinedWeight" Content="" FontFamily="Tw Cen MT Condensed Extra Bold" FontSize="96" Foreground="White" Height="200" Width="600" />
+            <!--local:ShadowTextBlockContent="320 kgs" Text="blah" FontFamily="Tw Cen MT Condensed Extra Bold" FontSize="96" Foreground="White" Height="754" Width="616.679" Loaded="textBlockCombinedWeight_Loaded"  /-->
+            <TextBlock x:Name="textBlockTimeLeft" HorizontalAlignment="Left" Margin="50,0,0,-20" TextWrapping="Wrap" Text="00:54 sec" VerticalAlignment="Bottom" FontSize="96" FontWeight="Bold" Height="127" Width="414" MouseLeftButtonDown="textBlockTimeLeft_MouseLeftButtonDown"/>
+            <Grid x:Name="gridDebug" Height="276" Margin="0,0,100,-900" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="287">
+                <Rectangle Fill="#FFF4F4F5" Stroke="Black" RadiusX="16" RadiusY="16" Margin="0,1,0,-13.5"/>
+                <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="H.E.A.V.I test console" VerticalAlignment="Top" FontSize="16" TextDecorations="Underline"/>
+                <Button x:Name="btnStartRound" Content="Restart Game" HorizontalAlignment="Left" Margin="18.563,43,0,0" VerticalAlignment="Top" Width="119.062" Click="btnStartGame_Click" Height="21.714"/>
+                <Button x:Name="btnEndRound" Content="Win" HorizontalAlignment="Left" Margin="18.563,69.658,0,0" VerticalAlignment="Top" Width="51.062" Click="btnEndRound_Click" Height="21.713"/>
+                <TextBox x:Name="txtHumanWeight" HorizontalAlignment="Right" Height="23" Margin="0,80.49,9.999,0" TextWrapping="Wrap" Text="181" VerticalAlignment="Top" Width="120" d:LayoutOverrides="VerticalAlignment"/>
+                <TextBlock x:Name="textBlockSimulateWeightOfHumans" HorizontalAlignment="Right" Margin="0,64.53,42.569,0" TextWrapping="Wrap" Text="Simulate weight:" VerticalAlignment="Top"/>
+                <Button x:Name="btnHideConsole" Content="Hide console" HorizontalAlignment="Left" Margin="18.563,221.156,0,0" VerticalAlignment="Top" Width="119.437" Click="btnHideConsole_Click" Height="21.714"/>
+                <Button x:Name="btnShowLog" Content="Show log" HorizontalAlignment="Left" Margin="18,196.476,0,0" VerticalAlignment="Top" Width="119.437" Height="21.714"/>
+                <Button x:Name="btnBeersDownOne" Content="Beers down 1" HorizontalAlignment="Left" Margin="18,119.895,0,137.319" Width="119.437" Click="btnBeersDownOne_Click" />
+                <CheckBox x:Name="chkLiveWeightData" Content="Live Weight data" HorizontalAlignment="Right" IsChecked="True" Margin="0,44,10,0" VerticalAlignment="Top" Width="119.999"/>
+                <Button x:Name="btnBeersDownEntirely" Content="Beers down entirely" HorizontalAlignment="Left" Margin="18,142.5,0,112.5" Width="120" Click="btnBeersDownEntirely_Click" />
+                <Button x:Name="btnBeersDownFromTopToHoldingPos" Content="Beers down from top" HorizontalAlignment="Left" Margin="18,168.5,0,85.05" Width="120" Click="btnBeersDownFromTopToHoldingPos_Click" />
+                <TextBox x:Name="txtRoundsResetLeftToWin" HorizontalAlignment="Left" Height="23" Margin="18,253,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="120"/>
+                <Button x:Name="btnResetRoundsLeft" Content="Reset Rounds in Settings" Margin="143,0,9.999,0" VerticalAlignment="Bottom" Height="24" Click="btnResetRoundsLeft_Click"/>
+                <TextBlock x:Name="txtRoundsLeft" HorizontalAlignment="Left" Margin="157.001,108.49,0,0" TextWrapping="Wrap" Text="Rounds left:" VerticalAlignment="Top"/>
+                <Button x:Name="btnLooseRound" Content="Loose" HorizontalAlignment="Left" Margin="86.375,69.714,0,0" VerticalAlignment="Top" Width="51.062" Height="21.713" Click="btnLooseRound_Click"/>
+                <Button x:Name="btnWinGame" Content="Win Game" HorizontalAlignment="Left" Margin="18,95.609,0,161.605" Width="119.437" Click="btnWinGame_Click" />
+                <TextBlock x:Name="txtSoundPressureDetected" HorizontalAlignment="Left" Margin="157,142,0,0" TextWrapping="Wrap" Text="Soundpressure:" VerticalAlignment="Top"/>
+                <CheckBox x:Name="chkCheckSoundPressure" Content="Check Soundpress." HorizontalAlignment="Left" Margin="157,127,0,0" VerticalAlignment="Top" IsChecked="True"/>
+            </Grid>
+        </Grid>
+        <local:ShadowTextBlock x:Name="textBlockThresholdHeld" Grid.Column="2" Margin="230,10,252,0" Grid.Row="2" VerticalAlignment="Top" Foreground="#FF46FF00" FontSize="200" Text="5" Height="256" RenderTransformOrigin="0.5,0.5" Visibility="Hidden" Grid.ColumnSpan="2">
+            <local:ShadowTextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </local:ShadowTextBlock.RenderTransform>
+        </local:ShadowTextBlock>
+        <Canvas Margin="122,690,38,116">
+            <Canvas.Triggers>
+                <EventTrigger RoutedEvent="Loaded">
+                    <BeginStoryboard Storyboard="{StaticResource MoveUpAndDown}" />
+                </EventTrigger>
+            </Canvas.Triggers>
+            <Image x:Name="MyWeight" Canvas.Top="0" Source="/GFX/scaletop.png" Stretch="Fill" Height="257" Width="550" Canvas.Left="552"/>
+            <Image x:Name="MyWeightBottom" Canvas.Top="128" Source="/GFX/scalebottom.png" Stretch="Fill" Height="190" Width="520" Canvas.Left="570" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        </Canvas>
+
+    </Grid>
+</Window>

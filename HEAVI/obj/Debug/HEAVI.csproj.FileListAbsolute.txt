@@ -1,0 +1,291 @@
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\Fireworks.mp4
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\InZone5.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\OfferWager2Complete.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\OfferWager3Complete.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\RoundLost4Complete.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\RoundLost5Complete.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\WeightLow2.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\WeightLow3.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\InZone1.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\InZone2.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\InZone3.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\InZone4.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\OfferWager1Complete.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\RoundLost1Complete.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\RoundLost2Complete.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\RoundLost3Complete.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\RoundWon1Complete.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\RoundWon2Complete.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\RoundWon3Complete.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\WagerLost1Complete.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\WagerLost2Complete.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\WagerWon1Complete.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\WagerWon2Complete.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\WeightHigh1.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\WeightHigh2.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\WeightHigh3.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\WeightLow1.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\MainMachineSound3.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\Potato-Chips.jpg
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\Alert.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\MainMachineSound.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Sound\Rendered\MainMachineSound2.mp3
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\BrightContrast.ps
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\BlueSky2.jpeg
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\Brunette.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\BrunetteEyesClosed.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\BlueSky.jpg
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\GuyGlasses.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\GuyGlassesEyesClosed.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\HighTree.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\LaysBlack.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\LaysLightGreen.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\LaysRed.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\NewGuy1.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\SandGuy.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\SandGuyHand.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\SandGuySmile.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\SandGuySmileSmall.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\LaysBlue.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\LaysGreen.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\LaysYellow.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\StylishGirl.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\StylishGirlLower.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\StylishGirlUpper.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\Tits.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\Group-of-people-clipart.jpg
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\metal-texture.jpg
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\People.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\RedX.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\Unbraco.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\BeerCrane.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\BeerFluid.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\BeerCrate.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\StraigthRig.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\WarningStripe.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\check.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\grass.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\nightsky.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\Moon.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\Skull.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\Girl1.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\Girl2.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\Girl3.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\Guy1.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\Guy2.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\Guy3.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\GlareStar.png
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\GFX\Weight.svg
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\HEAVI.exe.config
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\HEAVI.exe
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\HEAVI.pdb
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\AlertLED.dll
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\AudioSwitcher.AudioApi.CoreAudio.dll
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\AudioSwitcher.AudioApi.dll
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\DotNetSlackClient.dll
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Microsoft.Expression.Drawing.dll
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\ScaleWithEffects.dll
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\AlertLED.pdb
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\ScaleWithEffects.pdb
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\HEAVI.csproj.AssemblyReference.cache
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\ShadowTextBlock.baml
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\ApplicationClosed.g.cs
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\AwaitingReset.g.cs
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\CraneLoweringScreen.g.cs
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\GetReadyForTheWager.g.cs
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\GlareStar.g.cs
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\IdleScreen1.g.cs
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\MainWindow.g.cs
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\OfferWager.g.cs
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\RoundLostScreen.g.cs
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\RoundWonScreen.g.cs
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\ShadowTextBlock.g.cs
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\WagerLost.g.cs
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\WagerWon..g.cs
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\App.g.cs
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\HEAVI_Content.g.cs
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\HEAVI_MarkupCompile.cache
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\HEAVI_MarkupCompile.lref
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\ApplicationClosed.baml
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\AwaitingReset.baml
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\CraneLoweringScreen.baml
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\GetReadyForTheWager.baml
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\GlareStar.baml
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\IdleScreen1.baml
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\MainWindow.baml
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\OfferWager.baml
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\RoundLostScreen.baml
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\RoundWonScreen.baml
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\WagerLost.baml
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\WagerWon..baml
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\HEAVI.g.resources
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\HEAVI.Properties.Resources.resources
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\HEAVI.csproj.GenerateResource.cache
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\HEAVI.csproj.CoreCompileInputs.cache
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\HEAVI.csproj.Up2Date
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\HEAVI.exe
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\HEAVI\obj\Debug\HEAVI.pdb
+F:\Heavi2025\HEAVI\bin\Debug\GFX\Fireworks.mp4
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\InZone5.mp3
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\OfferWager2Complete.mp3
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\OfferWager3Complete.mp3
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\RoundLost4Complete.mp3
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\RoundLost5Complete.mp3
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\WeightLow2.mp3
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\WeightLow3.mp3
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\InZone1.mp3
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\InZone2.mp3
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\InZone3.mp3
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\InZone4.mp3
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\OfferWager1Complete.mp3
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\RoundLost1Complete.mp3
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\RoundLost2Complete.mp3
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\RoundLost3Complete.mp3
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\RoundWon1Complete.mp3
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\RoundWon2Complete.mp3
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\RoundWon3Complete.mp3
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\WagerLost1Complete.mp3
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\WagerLost2Complete.mp3
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\WagerWon1Complete.mp3
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\WagerWon2Complete.mp3
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\WeightHigh1.mp3
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\WeightHigh2.mp3
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\WeightHigh3.mp3
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\WeightLow1.mp3
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\MainMachineSound3.mp3
+F:\Heavi2025\HEAVI\bin\Debug\GFX\Potato-Chips.jpg
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\Alert.mp3
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\MainMachineSound.mp3
+F:\Heavi2025\HEAVI\bin\Debug\Sound\Rendered\MainMachineSound2.mp3
+F:\Heavi2025\HEAVI\bin\Debug\BrightContrast.ps
+F:\Heavi2025\HEAVI\bin\Debug\GFX\BlueSky2.jpeg
+F:\Heavi2025\HEAVI\bin\Debug\GFX\Brunette.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\BrunetteEyesClosed.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\BlueSky.jpg
+F:\Heavi2025\HEAVI\bin\Debug\GFX\GuyGlasses.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\GuyGlassesEyesClosed.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\HighTree.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\LaysBlack.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\LaysLightGreen.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\LaysRed.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\NewGuy1.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\SandGuy.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\SandGuyHand.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\SandGuySmile.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\SandGuySmileSmall.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\LaysBlue.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\LaysGreen.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\LaysYellow.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\StylishGirl.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\StylishGirlLower.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\StylishGirlUpper.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\Tits.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\Group-of-people-clipart.jpg
+F:\Heavi2025\HEAVI\bin\Debug\GFX\metal-texture.jpg
+F:\Heavi2025\HEAVI\bin\Debug\GFX\People.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\RedX.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\Unbraco.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\BeerCrane.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\BeerFluid.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\BeerCrate.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\StraigthRig.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\WarningStripe.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\check.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\grass.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\nightsky.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\Moon.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\Skull.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\Girl1.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\Girl2.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\Girl3.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\Guy1.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\Guy2.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\Guy3.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\GlareStar.png
+F:\Heavi2025\HEAVI\bin\Debug\GFX\Weight.svg
+F:\Heavi2025\HEAVI\bin\Debug\HEAVI.exe.config
+F:\Heavi2025\HEAVI\bin\Debug\HEAVI.exe
+F:\Heavi2025\HEAVI\bin\Debug\HEAVI.pdb
+F:\Heavi2025\HEAVI\bin\Debug\roslyn\csc.exe
+F:\Heavi2025\HEAVI\bin\Debug\roslyn\csc.exe.config
+F:\Heavi2025\HEAVI\bin\Debug\roslyn\csc.rsp
+F:\Heavi2025\HEAVI\bin\Debug\roslyn\csi.exe
+F:\Heavi2025\HEAVI\bin\Debug\roslyn\csi.rsp
+F:\Heavi2025\HEAVI\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Heavi2025\HEAVI\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Heavi2025\HEAVI\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Heavi2025\HEAVI\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
+F:\Heavi2025\HEAVI\bin\Debug\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Heavi2025\HEAVI\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Heavi2025\HEAVI\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
+F:\Heavi2025\HEAVI\bin\Debug\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Heavi2025\HEAVI\bin\Debug\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Heavi2025\HEAVI\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Heavi2025\HEAVI\bin\Debug\roslyn\System.AppContext.dll
+F:\Heavi2025\HEAVI\bin\Debug\roslyn\System.Collections.Immutable.dll
+F:\Heavi2025\HEAVI\bin\Debug\roslyn\System.Diagnostics.StackTrace.dll
+F:\Heavi2025\HEAVI\bin\Debug\roslyn\System.IO.FileSystem.dll
+F:\Heavi2025\HEAVI\bin\Debug\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Heavi2025\HEAVI\bin\Debug\roslyn\System.Reflection.Metadata.dll
+F:\Heavi2025\HEAVI\bin\Debug\roslyn\vbc.exe
+F:\Heavi2025\HEAVI\bin\Debug\roslyn\vbc.exe.config
+F:\Heavi2025\HEAVI\bin\Debug\roslyn\vbc.rsp
+F:\Heavi2025\HEAVI\bin\Debug\roslyn\VBCSCompiler.exe
+F:\Heavi2025\HEAVI\bin\Debug\roslyn\VBCSCompiler.exe.config
+F:\Heavi2025\HEAVI\bin\Debug\AlertLED.dll
+F:\Heavi2025\HEAVI\bin\Debug\AudioSwitcher.AudioApi.CoreAudio.dll
+F:\Heavi2025\HEAVI\bin\Debug\AudioSwitcher.AudioApi.dll
+F:\Heavi2025\HEAVI\bin\Debug\DotNetSlackClient.dll
+F:\Heavi2025\HEAVI\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Heavi2025\HEAVI\bin\Debug\Microsoft.Expression.Drawing.dll
+F:\Heavi2025\HEAVI\bin\Debug\Newtonsoft.Json.dll
+F:\Heavi2025\HEAVI\bin\Debug\ScaleWithEffects.dll
+F:\Heavi2025\HEAVI\bin\Debug\AlertLED.pdb
+F:\Heavi2025\HEAVI\bin\Debug\ScaleWithEffects.pdb
+F:\Heavi2025\HEAVI\bin\Debug\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Heavi2025\HEAVI\bin\Debug\Newtonsoft.Json.xml
+F:\Heavi2025\HEAVI\obj\Debug\HEAVI.csproj.AssemblyReference.cache
+F:\Heavi2025\HEAVI\obj\Debug\HEAVI.exe.config
+F:\Heavi2025\HEAVI\obj\Debug\ShadowTextBlock.baml
+F:\Heavi2025\HEAVI\obj\Debug\ApplicationClosed.g.cs
+F:\Heavi2025\HEAVI\obj\Debug\AwaitingReset.g.cs
+F:\Heavi2025\HEAVI\obj\Debug\CraneLoweringScreen.g.cs
+F:\Heavi2025\HEAVI\obj\Debug\GetReadyForTheWager.g.cs
+F:\Heavi2025\HEAVI\obj\Debug\GlareStar.g.cs
+F:\Heavi2025\HEAVI\obj\Debug\IdleScreen1.g.cs
+F:\Heavi2025\HEAVI\obj\Debug\MainWindow.g.cs
+F:\Heavi2025\HEAVI\obj\Debug\OfferWager.g.cs
+F:\Heavi2025\HEAVI\obj\Debug\RoundLostScreen.g.cs
+F:\Heavi2025\HEAVI\obj\Debug\RoundWonScreen.g.cs
+F:\Heavi2025\HEAVI\obj\Debug\ShadowTextBlock.g.cs
+F:\Heavi2025\HEAVI\obj\Debug\WagerLost.g.cs
+F:\Heavi2025\HEAVI\obj\Debug\WagerWon..g.cs
+F:\Heavi2025\HEAVI\obj\Debug\App.g.cs
+F:\Heavi2025\HEAVI\obj\Debug\HEAVI_Content.g.cs
+F:\Heavi2025\HEAVI\obj\Debug\GeneratedInternalTypeHelper.g.cs
+F:\Heavi2025\HEAVI\obj\Debug\HEAVI_MarkupCompile.cache
+F:\Heavi2025\HEAVI\obj\Debug\HEAVI_MarkupCompile.lref
+F:\Heavi2025\HEAVI\obj\Debug\ApplicationClosed.baml
+F:\Heavi2025\HEAVI\obj\Debug\AwaitingReset.baml
+F:\Heavi2025\HEAVI\obj\Debug\CraneLoweringScreen.baml
+F:\Heavi2025\HEAVI\obj\Debug\GetReadyForTheWager.baml
+F:\Heavi2025\HEAVI\obj\Debug\GlareStar.baml
+F:\Heavi2025\HEAVI\obj\Debug\IdleScreen1.baml
+F:\Heavi2025\HEAVI\obj\Debug\MainWindow.baml
+F:\Heavi2025\HEAVI\obj\Debug\OfferWager.baml
+F:\Heavi2025\HEAVI\obj\Debug\RoundLostScreen.baml
+F:\Heavi2025\HEAVI\obj\Debug\RoundWonScreen.baml
+F:\Heavi2025\HEAVI\obj\Debug\WagerLost.baml
+F:\Heavi2025\HEAVI\obj\Debug\WagerWon..baml
+F:\Heavi2025\HEAVI\obj\Debug\HEAVI.g.resources
+F:\Heavi2025\HEAVI\obj\Debug\HEAVI.Properties.Resources.resources
+F:\Heavi2025\HEAVI\obj\Debug\HEAVI.csproj.GenerateResource.cache
+F:\Heavi2025\HEAVI\obj\Debug\HEAVI.csproj.CoreCompileInputs.cache
+F:\Heavi2025\HEAVI\obj\Debug\HEAVI.csproj.Up2Date
+F:\Heavi2025\HEAVI\obj\Debug\HEAVI.exe
+F:\Heavi2025\HEAVI\obj\Debug\HEAVI.pdb
