@@ -1,0 +1,39 @@
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\AlertLED\bin\Debug\AlertLED.dll
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\AlertLED\bin\Debug\AlertLED.pdb
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\AlertLED\obj\Debug\AlertLED.csproj.AssemblyReference.cache
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\AlertLED\obj\Debug\StatusLED.g.cs
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\AlertLED\obj\Debug\AlertLED_MarkupCompile.cache
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\AlertLED\obj\Debug\AlertLED_MarkupCompile.lref
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\AlertLED\obj\Debug\StatusLED.baml
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\AlertLED\obj\Debug\AlertLED.g.resources
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\AlertLED\obj\Debug\AlertLED.Properties.Resources.resources
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\AlertLED\obj\Debug\AlertLED.csproj.GenerateResource.cache
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\AlertLED\obj\Debug\AlertLED.csproj.CoreCompileInputs.cache
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\AlertLED\obj\Debug\AlertLED.dll
+C:\Users\joach\OneDrive\Desktop\heavi\HEAVI 2023\AlertLED\obj\Debug\AlertLED.pdb
+F:\Heavi2025\AlertLED\bin\Debug\AlertLED.dll
+F:\Heavi2025\AlertLED\bin\Debug\AlertLED.pdb
+F:\Heavi2025\AlertLED\obj\Debug\AlertLED.csproj.AssemblyReference.cache
+F:\Heavi2025\AlertLED\obj\Debug\StatusLED.g.cs
+F:\Heavi2025\AlertLED\obj\Debug\AlertLED_MarkupCompile.cache
+F:\Heavi2025\AlertLED\obj\Debug\AlertLED_MarkupCompile.lref
+F:\Heavi2025\AlertLED\obj\Debug\StatusLED.baml
+F:\Heavi2025\AlertLED\obj\Debug\AlertLED.g.resources
+F:\Heavi2025\AlertLED\obj\Debug\AlertLED.Properties.Resources.resources
+F:\Heavi2025\AlertLED\obj\Debug\AlertLED.csproj.GenerateResource.cache
+F:\Heavi2025\AlertLED\obj\Debug\AlertLED.csproj.CoreCompileInputs.cache
+F:\Heavi2025\AlertLED\obj\Debug\AlertLED.dll
+F:\Heavi2025\AlertLED\obj\Debug\AlertLED.pdb
+C:\Users\joach\OneDrive\Desktop\Heavi2025\AlertLED\bin\Debug\AlertLED.dll
+C:\Users\joach\OneDrive\Desktop\Heavi2025\AlertLED\bin\Debug\AlertLED.pdb
+C:\Users\joach\OneDrive\Desktop\Heavi2025\AlertLED\obj\Debug\AlertLED.csproj.AssemblyReference.cache
+C:\Users\joach\OneDrive\Desktop\Heavi2025\AlertLED\obj\Debug\StatusLED.g.cs
+C:\Users\joach\OneDrive\Desktop\Heavi2025\AlertLED\obj\Debug\AlertLED_MarkupCompile.cache
+C:\Users\joach\OneDrive\Desktop\Heavi2025\AlertLED\obj\Debug\AlertLED_MarkupCompile.lref
+C:\Users\joach\OneDrive\Desktop\Heavi2025\AlertLED\obj\Debug\StatusLED.baml
+C:\Users\joach\OneDrive\Desktop\Heavi2025\AlertLED\obj\Debug\AlertLED.g.resources
+C:\Users\joach\OneDrive\Desktop\Heavi2025\AlertLED\obj\Debug\AlertLED.Properties.Resources.resources
+C:\Users\joach\OneDrive\Desktop\Heavi2025\AlertLED\obj\Debug\AlertLED.csproj.GenerateResource.cache
+C:\Users\joach\OneDrive\Desktop\Heavi2025\AlertLED\obj\Debug\AlertLED.csproj.CoreCompileInputs.cache
+C:\Users\joach\OneDrive\Desktop\Heavi2025\AlertLED\obj\Debug\AlertLED.dll
+C:\Users\joach\OneDrive\Desktop\Heavi2025\AlertLED\obj\Debug\AlertLED.pdb

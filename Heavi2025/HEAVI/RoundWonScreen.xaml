@@ -1,0 +1,220 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HEAVI"
+        xmlns:AlertLED="clr-namespace:AlertLED;assembly=AlertLED" x:Class="HEAVI.RoundWonScreen"
+        mc:Ignorable="d"
+        Title="RoundWonScreen" Height="1085" Width="1920" Background="#FF00FF17" WindowStyle="None" ResizeMode="NoResize" WindowState="Maximized" WindowStartupLocation="CenterScreen" MouseDoubleClick="Window_MouseDoubleClick">
+    <Window.Resources>
+        <Storyboard x:Key="RevealWonSign">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="textBlockYouHaveWon">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-3"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <BounceEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="textBlockYouHaveWon">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-291"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <BounceEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="textBlockTheCaseOfBeers">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <BounceEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="textBlockTheCaseOfBeers">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <BounceEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="AnimateWarning">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="grdWaltherKortDescriptor">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <BounceEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="grdWaltherKortDescriptor">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <BounceEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="grdWaltherKortDescriptor">
+                <EasingThicknessKeyFrame KeyTime="0:0:1.5" Value="960,100,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:4" Value="959,99,0,0"/>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="grdWaltherKortDescriptor">
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="4.528"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4" Value="3"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7" Value="4">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="imgWaltherKort">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="756">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseIn"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="imgWaltherKort">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="393">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseIn"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="imgWaltherKort">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="-7">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CubicEase EasingMode="EaseIn"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="0:0:7" Value="7">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="imgWaltherKort">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7" Value="1.5">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="imgWaltherKort">
+                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:7" Value="1.5">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource RevealWonSign}"/>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid>
+        <local:ShadowTextBlock x:Name="textBlockYouHaveWon" Margin="10,0" Text="I har vundet" VerticalAlignment="Top" Foreground="#014500" FontSize="240" Height="297.63" Width="Auto" ShadowOffset="4" RenderTransformOrigin="0.5,0.5">
+            <local:ShadowTextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </local:ShadowTextBlock.RenderTransform>            
+        </local:ShadowTextBlock>
+        <local:ShadowTextBlock x:Name="textBlockTheCaseOfBeers" Margin="194.179,472.372,224.821,66.801" Foreground="White" Text="Kassen med øl vil nu blive hejst ned 1 trin" FontSize="106.667" Height="Auto" Width="Auto" RenderTransformOrigin="0.5,0.5">
+            <local:ShadowTextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </local:ShadowTextBlock.RenderTransform>
+        </local:ShadowTextBlock>
+        <!--<Grid x:Name="grdWaltherKortDescriptor" HorizontalAlignment="Left" Height="529" Margin="960,100,0,0" VerticalAlignment="Top" Width="926.5" RenderTransformOrigin="0.5,0.5">
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="4.528"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="105*"/>
+                <ColumnDefinition Width="121*"/>
+            </Grid.ColumnDefinitions>
+
+            <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="517.225" Margin="0" Stroke="Black" VerticalAlignment="Top" Width="926.5" RadiusX="20" RadiusY="20" Grid.ColumnSpan="2"/>
+            <Image HorizontalAlignment="Left" Height="53.5" VerticalAlignment="Top" Width="926.5" Source="GFX/WarningStripe.png" Stretch="Fill" Grid.ColumnSpan="2"/>
+            <Image HorizontalAlignment="Left" Height="53.5" Margin="0,463.725,0,0" VerticalAlignment="Top" Width="926.5" Source="GFX/WarningStripe.png" Stretch="Fill" Grid.ColumnSpan="2"/>
+            <AlertLED:StatusLED HorizontalAlignment="Left" Height="162.648" Margin="-12.5,35.5,0,0" VerticalAlignment="Top" Width="158.037" RenderTransformOrigin="0.5,0.5">
+                <AlertLED:StatusLED.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="0.7" ScaleY="0.7"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </AlertLED:StatusLED.RenderTransform>
+            </AlertLED:StatusLED>
+            <AlertLED:StatusLED HorizontalAlignment="Left" Height="162.648" Margin="352,35.5,-13.991,0" VerticalAlignment="Top" Width="158.037" RenderTransformOrigin="0.5,0.5" Grid.Column="1">
+                <AlertLED:StatusLED.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="0.7" ScaleY="0.7"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </AlertLED:StatusLED.RenderTransform>
+            </AlertLED:StatusLED>
+            <local:ShadowTextBlock x:Name="txtWarningDescriptor" Text="Når ølkassen næste gang kører ned "  HorizontalAlignment="Left" Height="77.5" Margin="31.5,179.13,0,0" VerticalAlignment="Top" Width="858" Foreground="#FFA298FF" Grid.ColumnSpan="2" ShadowOffset="1"/>
+            <local:ShadowTextBlock x:Name="txtWarningDescriptor_Copy" Text="finder i et Walther kort "  HorizontalAlignment="Left" Height="77.5" Margin="144.644,240.63,0,0" VerticalAlignment="Top" Width="671.926" Foreground="#FFA298FF" Grid.ColumnSpan="2" ShadowOffset="1"/>
+            <local:ShadowTextBlock x:Name="txtWarningDescriptor_Copy1" Text="Brug dette til at forfriske jeres ganer"  HorizontalAlignment="Left" Height="77.5" Margin="31.5,300.13,0,0" VerticalAlignment="Top" Width="876.5" Foreground="#FFA298FF" Grid.ColumnSpan="2" ShadowOffset="1"/>
+            <local:ShadowTextBlock x:Name="txtWarningDescriptor_Copy2" Text="i den nærliggende bar"  HorizontalAlignment="Left" Height="95.595" Margin="31.5,363.13,0,0" VerticalAlignment="Top" Width="876.5" Foreground="#FFA298FF" Grid.ColumnSpan="2" FontSize="60"/>
+            <local:ShadowTextBlock x:Name="txtWarning" Text="VIGTIGT" HorizontalAlignment="Left" Height="119.5" Margin="232.454,43.5,0,0" VerticalAlignment="Top" Width="478.679" Foreground="Red" FontSize="100" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+                <local:ShadowTextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="0.843"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="0.735"/>
+                    </TransformGroup>
+                </local:ShadowTextBlock.RenderTransform>
+            </local:ShadowTextBlock>
+        </Grid>-->
+        <!--<Image x:Name="imgWaltherKort" HorizontalAlignment="Left" Height="100" Margin="-105.821,-49.5,0,0" VerticalAlignment="Top" Width="63" Source="WaltherKortCut.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>-->
+
+    </Grid>
+</Window>

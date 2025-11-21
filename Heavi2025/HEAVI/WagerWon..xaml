@@ -1,0 +1,479 @@
+﻿<Window x:Class="HEAVI.WagerWon"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HEAVI"
+        mc:Ignorable="d"
+        Title="WagerWon" Height="1080" Width="1920" ResizeMode="NoResize" WindowState="Maximized" WindowStartupLocation="CenterScreen" WindowStyle="None" MouseDoubleClick="Window_MouseDoubleClick" Background="White">
+    <Window.Resources>
+        <Storyboard x:Key="newFlaps" RepeatBehavior="Forever">
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[6].(LineSegment.Point)" Storyboard.TargetName="pathNewWings">
+                <EasingPointKeyFrame KeyTime="0" Value="32.9989250569026,38.833"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.2" Value="33.9989250569026,42.6663333333334"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.3" Value="30.1917435687721,49.7437289561431"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.4" Value="26.3845620806415,56.8211245789529"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="34.333,53.4996666666668"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.6" Value="33.8335000000001,50.4996666666664"/>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[5].(LineSegment.Point)" Storyboard.TargetName="pathNewWings">
+                <EasingPointKeyFrame KeyTime="0" Value="36.3322583902359,32.4996666666667"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.2" Value="42.4989250569025,37.9996666666664"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.3" Value="30.25,56.833"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.4" Value="21.6663333333334,60.9996666666668"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="35.4996666666666,59.3329999999998"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.6" Value="34.3334999999998,53.1663333333334"/>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[4].(LineSegment.Point)" Storyboard.TargetName="pathNewWings">
+                <EasingPointKeyFrame KeyTime="0" Value="37.4989250569026,23.1663333647664"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.2" Value="45.9989250569026,28.3330000000001"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.3" Value="24.5,60.5830000000005"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.4" Value="15.9998366113536,66.1663333333333"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="33.1663333333333,66.4996666666664"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.6" Value="32.0001666666666,53.333"/>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[3].(LineSegment.Point)" Storyboard.TargetName="pathNewWings">
+                <EasingPointKeyFrame KeyTime="0" Value="36.4989250569026,15.9996671467654"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.2" Value="45.8322583902359,23.1663333333334"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.3" Value="19.5,59.583"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.4" Value="3.4998366113536,69.333"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="22.833,75.8330000000003"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.6" Value="28.3335,53.3330000000001"/>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[2].(LineSegment.Point)" Storyboard.TargetName="pathNewWings">
+                <EasingPointKeyFrame KeyTime="0" Value="27.6655917235693,0.66658502742131"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.2" Value="37.6655917235692,25.9996666666667"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.3" Value="15.5,54.583"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.4" Value="0.666585079472969,68.1663333333331"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="25.333,65.3330000000001"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.6" Value="25.5001666666662,53.4996666666665"/>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(LineSegment.Point)" Storyboard.TargetName="pathNewWings">
+                <EasingPointKeyFrame KeyTime="0" Value="24.9989250569026,15.3328365109825"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.2" Value="28.1655917235692,31.333"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.3" Value="11.5,51.8329999999998"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.4" Value="7.83300000000002,59.3329999999998"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="23.833,58.4996666666665"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.6" Value="21.1668333333334,51.8330000000001"/>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[0].(LineSegment.Point)" Storyboard.TargetName="pathNewWings">
+                <EasingPointKeyFrame KeyTime="0" Value="19.6648433902359,24.1664216457685"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.2" Value="19.3322583902359,35.9996666666667"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.3" Value="12.75,46.333"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.4" Value="9.49966666666665,50.9996666666665"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="23.333,54.4996666666666"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.6" Value="19.1668333333332,49.6663333333333"/>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.StartPoint)" Storyboard.TargetName="pathNewWings">
+                <EasingPointKeyFrame KeyTime="0" Value="19.6648433902359,40.0000870408694"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.2" Value="15.9993400483195,39.9996666666668"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.3" Value="17,42.833"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.4" Value="14.8327549446869,44.1663333333333"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="17.4996666666667,47.6663333333333"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.6" Value="17.4996666666667,47.6663333333333"/>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[7].(LineSegment.Point)" Storyboard.TargetName="pathNewWings">
+                <EasingPointKeyFrame KeyTime="0:0:0.2" Value="23.6663333333333,43.833"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.3" Value="25.7495441390101,46.9996666666667"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.4" Value="27.8327549446869,50.1663333333334"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="32.4996666666666,48.6663333333335"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.6" Value="32.4996666666666,48.6663333333335"/>
+            </PointAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="PathBirdBody">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-3.7995999999999981"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-3.8"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-3.633"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="PathBirdBody">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="-0.95160000000000267"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-1.452"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-0.869"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="pathNewWings">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-3.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="pathNewWings">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.4" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0.25"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.083"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="ElipsisEye">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-0.264"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0.612"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="0.412"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="ElipsisEye">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="-0.125"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="-0.125"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.7" Value="-0.025"/>
+            </DoubleAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[0].(BezierSegment.Point2)" Storyboard.TargetName="PathBirdBody">
+                <EasingPointKeyFrame KeyTime="0:0:0.3" Value="26.6900008515924,12.6763206283935"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="25.4904008515924,14.1767206283935"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.6" Value="26.3234008515921,13.1937206283935"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.7" Value="26.7020132793608,13.1738213862776"/>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[0].(BezierSegment.Point3)" Storyboard.TargetName="PathBirdBody">
+                <EasingPointKeyFrame KeyTime="0:0:0.3" Value="30.6540999999992,12.1116"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="29.4544999999992,13.612"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.6" Value="30.2874999999989,12.629"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.7" Value="30.6661124277676,12.6091007578842"/>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(BezierSegment.Point1)" Storyboard.TargetName="PathBirdBody">
+                <EasingPointKeyFrame KeyTime="0:0:0.3" Value="37.7044101560242,11.1072215945609"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="36.5048101560242,12.6076215945609"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.6" Value="37.3378101560239,11.6246215945609"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.7" Value="37.7164225837926,11.6047223524451"/>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(BezierSegment.Point2)" Storyboard.TargetName="PathBirdBody">
+                <EasingPointKeyFrame KeyTime="0:0:0.3" Value="36.0469904840695,13.4672152058881"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="34.8473904840699,14.3676152058881"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.6" Value="33.788155471986,11.9074309702886"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.7" Value="38.2803904840691,13.3846152373212"/>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[1].(BezierSegment.Point3)" Storyboard.TargetName="PathBirdBody">
+                <EasingPointKeyFrame KeyTime="0:0:0.3" Value="45.0540999999989,9.3116"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="43.8544999999993,10.212"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.6" Value="43.4874999999992,9.82900000000001"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.7" Value="47.2874999999985,9.22900003143309"/>
+            </PointAnimationUsingKeyFrames>
+            <PointAnimationUsingKeyFrames Storyboard.TargetProperty="(Path.Data).(PathGeometry.Figures)[0].(PathFigure.Segments)[2].(BezierSegment.Point1)" Storyboard.TargetName="PathBirdBody">
+                <EasingPointKeyFrame KeyTime="0:0:0.3" Value="48.8480922788165,7.56116363892395"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.5" Value="47.6484922788169,8.46156363892394"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.6" Value="49.0874999999992,8.629"/>
+                <EasingPointKeyFrame KeyTime="0:0:0.7" Value="51.0814922788161,7.47856367035706"/>
+            </PointAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="AnimateBlueSky">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="imgBlueSky">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:30" Value="248"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="imgBlueSky">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:30" Value="80"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="AnimateWagerWonTitle">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="textBlockWagerWonTitle">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <BackEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="textBlockWagerWonTitle">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.3" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <BackEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="textBlockNowTheCraneWillLower">
+                <EasingThicknessKeyFrame KeyTime="0" Value="-200,281.6,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:1.5" Value="-200,281.6,0,0"/>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="textBlockNowTheCraneWillLower">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-1369.6"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-1369.6"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.1" Value="371.2">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <BounceEase EasingMode="EaseOut" Bounciness="20"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="textBlockNowTheCraneWillLower">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-25.6"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1.5" Value="-25.6"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.1" Value="-38.4">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <BounceEase EasingMode="EaseOut" Bounciness="20"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="imgBeerCrate">
+                <EasingDoubleKeyFrame KeyTime="0:0:2.3" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.3" Value="1200"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="textBlockAnd">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.904" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.52" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="textBlockAnd">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:2.904" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:3.52" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:4.4" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(GradientBrush.GradientStops)[0].(GradientStop.Offset)" Storyboard.TargetName="textBlockNotToMention">
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="0.233"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(GradientBrush.GradientStops)[0].(GradientStop.Color)" Storyboard.TargetName="textBlockNotToMention">
+                <EasingColorKeyFrame KeyTime="0:0:5" Value="#C6FF8000"/>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(GradientBrush.GradientStops)[2].(GradientStop.Offset)" Storyboard.TargetName="textBlockNotToMention">
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="0.566"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(GradientBrush.GradientStops)[2].(GradientStop.Color)" Storyboard.TargetName="textBlockNotToMention">
+                <EasingColorKeyFrame KeyTime="0:0:5" Value="#C6FFE500"/>
+            </ColorAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="textBlockNotToMention">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="textBlockNotToMention">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="textBlockNotToMention">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-200"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="-200"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="textBlockNotToMention">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:5" Value="10"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:6" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+
+
+        </Storyboard>
+        <Storyboard x:Key="AnimateBirdFlight">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Margin)" Storyboard.TargetName="canvasBird">
+                <EasingThicknessKeyFrame KeyTime="0" Value="0,35,-30,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:10" Value="0,35,-30,0"/>
+                <EasingThicknessKeyFrame KeyTime="0:0:11" Value="0,35,-30,0"/>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="canvasBird">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="-1941.6"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11" Value="44"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="-1981"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="canvasBird">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="64.8"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11" Value="263.2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="418"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="canvasBird">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="0.1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11" Value="0.1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0.8"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="canvasBird">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:10" Value="0.1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:11" Value="0.1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:18" Value="0.8"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="canvasBird">
+                <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:10" Value="{x:Static Visibility.Hidden}"/>
+                <DiscreteObjectKeyFrame KeyTime="0:0:11" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+            <BeginStoryboard Storyboard="{StaticResource AnimateBlueSky}"/>
+            <BeginStoryboard Storyboard="{StaticResource AnimateWagerWonTitle}"/>
+            <BeginStoryboard x:Name="newFlaps_BeginStoryboard" Storyboard="{StaticResource newFlaps}"/>
+            <BeginStoryboard Storyboard="{StaticResource AnimateBirdFlight}"/>
+        </EventTrigger>
+    </Window.Triggers>
+    <Grid>
+        <Image x:Name="imgBlueSky" Source="GFX/BlueSky2.jpeg" Stretch="None" Margin="-984.376,-782.813,-248.172,0" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Grid x:Name="gridChipsBags" HorizontalAlignment="Left" Height="308.4" VerticalAlignment="Top" Width="1749.6" Margin="148,799,0,0" RenderTransformOrigin="0.5,0.5">
+            <Canvas x:Name="canvas" Margin="0"/>
+        </Grid>
+        <Grid x:Name="grdTextControls" Background="#19000000">
+            <local:ShadowTextBlock x:Name="textBlockWagerWonTitle" Text="Nøjh manner" HorizontalAlignment="Left" Height="205" VerticalAlignment="Top" Width="1910" FontSize="140" RenderTransformOrigin="0.5,0.5">
+                <local:ShadowTextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:ShadowTextBlock.RenderTransform>
+                <local:ShadowTextBlock.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#C6FF0000" Offset="1"/>
+                        <GradientStop Color="White"/>
+                    </LinearGradientBrush>
+                </local:ShadowTextBlock.Foreground>
+            </local:ShadowTextBlock>
+            <local:ShadowTextBlock x:Name="textBlockNowTheCraneWillLower" Text="Nu sænker kranen jeres øl ned" HorizontalAlignment="Left" Height="153" VerticalAlignment="Top" Width="1540" FontSize="100" Margin="179.2,281.6,0,0" RenderTransformOrigin="0.5,0.5">
+                <local:ShadowTextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:ShadowTextBlock.RenderTransform>
+                <local:ShadowTextBlock.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#C618FF00" Offset="1"/>
+                        <GradientStop Color="White"/>
+                    </LinearGradientBrush>
+                </local:ShadowTextBlock.Foreground>
+            </local:ShadowTextBlock>
+            <local:ShadowTextBlock x:Name="textBlockAnd" Text="OG" HorizontalAlignment="Left" Height="175" VerticalAlignment="Top" Width="1540" FontSize="120" Margin="179.2,434.6,0,0" RenderTransformOrigin="0.5,0.5">
+                <local:ShadowTextBlock.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#7F8E8E8E" Offset="0"/>
+                        <GradientStop Color="White" Offset="0.333"/>
+                        <GradientStop Color="White" Offset="0.682"/>
+                        <GradientStop Color="#7F9F9F9F" Offset="0.985"/>
+                        <GradientStop Color="#FF626262" Offset="0.605"/>
+                    </LinearGradientBrush>
+                </local:ShadowTextBlock.Foreground>
+                <local:ShadowTextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:ShadowTextBlock.RenderTransform>
+            </local:ShadowTextBlock>
+            <local:ShadowTextBlock x:Name="textBlockNotToMention" Text="ikke at forglemme vil en flodbølge af chips dale ned fra himlen" HorizontalAlignment="Left" Height="421.8" VerticalAlignment="Top" Width="1540" FontSize="80" Margin="179.2,634,0,0" RenderTransformOrigin="0.5,0.5">
+                <local:ShadowTextBlock.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </local:ShadowTextBlock.RenderTransform>
+                <local:ShadowTextBlock.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#C618FF00" Offset="1"/>
+                        <GradientStop Color="White"/>
+                        <GradientStop Color="#C6FF8000" Offset="0.564"/>
+                    </LinearGradientBrush>
+                </local:ShadowTextBlock.Foreground>
+            </local:ShadowTextBlock>
+            <Image x:Name="imgBeerCrate" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="144.4" Source="GFX/BeerCrate.png" Margin="1765.6,-105,0,0" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Grid>
+        <Canvas x:Name="canvasBird" HorizontalAlignment="Right" Height="59" Margin="0,35,189,0" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.5,0.5">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="0.5" ScaleY="0.5"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+            <Path x:Name="PathBirdBody" Width="66.648" Canvas.Left="8.718" Canvas.Top="44.59" StrokeThickness="1.33317" StrokeLineJoin="Round" Stroke="#FF000000" Fill="White" RenderTransformOrigin="0.5,0.5" Height="15.33">
+                <Path.Data>
+                    <PathGeometry FillRule="Nonzero">
+                        <PathFigure IsClosed="True" StartPoint="10.8896343747201,11.6672490988514">
+                            <BezierSegment Point3="30.3876188205315,14.8594911648067" Point2="26.4235196721247,15.4242117932002" Point1="16.2560521616842,12.4653096153402"/>
+                            <BezierSegment Point3="44.6974555857719,10.807449582966" Point2="35.6903460698425,14.9630647888541" Point1="37.4379289765565,13.8551127593676"/>
+                            <BezierSegment Point3="65.9809796250536,0.666585022256416" Point2="65.9809796250536,0.666585022256416" Point1="48.4914478645895,9.05701322188995"/>
+                            <BezierSegment Point3="47.5011628508496,4.94325145851258" Point2="55.1026459723492,7.73610551582431" Point1="65.9809796250536,0.666585022256416"/>
+                            <BezierSegment Point3="18.7578829906638,2.94837298414167" Point2="25.3299962102745,1.25270528396471" Point1="39.8994899628244,2.15039764061888"/>
+                            <BezierSegment Point3="0.666585012951149,13.7513507741602" Point2="0.666585012951149,13.7513507741602" Point1="12.1857691705261,4.64398082980981"/>
+                            <LineSegment Point="4.02731324927051,12.3660247517624"/>
+                            <LineSegment Point="6.46384121309545,11.5867789015728"/>
+                        </PathFigure>
+                    </PathGeometry>
+                </Path.Data>
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform X="-3.6329999999999973" Y="-0.86899999999999933"/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+            </Path>
+            <Ellipse x:Name="ElipsisEye" Fill="#FF808180" Height="1" Stroke="White" Width="3" StrokeThickness="0" RenderTransformOrigin="0.5,0.5" Canvas.Left="20" Canvas.Top="50">
+                <Ellipse.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="-1" ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Ellipse.RenderTransform>
+            </Ellipse>
+            <Path x:Name="pathNewWings" Fill="White" Height="80.75" Stroke="#FF323232" StrokeThickness="1.33317" StrokeLineJoin="Round" Width="46.666" RenderTransformOrigin="0.5,0.5" Canvas.Left="7.667" Canvas.Top="5.667">
+                <Path.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Path.RenderTransform>
+                <Path.Data>
+                    <PathGeometry>
+                        <PathFigure StartPoint="19.6648433902359,40.0000870408694">
+                            <LineSegment Point="19.6648433902359,24.1664216457685"/>
+                            <LineSegment Point="24.9989250569026,15.3328365109825"/>
+                            <LineSegment Point="27.6655917235693,0.66658502742131"/>
+                            <LineSegment Point="36.4989250569026,15.9996671467654"/>
+                            <LineSegment Point="37.4989250569026,23.1663333647664"/>
+                            <LineSegment Point="36.3322583902359,32.4996666666667"/>
+                            <LineSegment Point="32.9989250569026,38.833"/>
+                            <LineSegment Point="31.3322583902359,41.833"/>
+                        </PathFigure>
+                    </PathGeometry>
+                </Path.Data>
+            </Path>
+        </Canvas>
+
+
+    </Grid>
+</Window>
